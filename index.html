@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>La Tab'Verte 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .section1 {
+            background: url('clouds.png') no-repeat center center fixed; 
+            background-size: cover;
+            height: 40vh;
+        }
+
+        .section2 {
+            background-color: #5DB31A;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .section2 img {
+            position: absolute;
+            top: -30vh;
+            z-index: 2;
+        }
+
+        .section2 p {
+            font-size: 1.5rem;
+        }
+
+        .section3 {
+            background-color: #445B2F;
+            padding: 100px;
+            padding-top: 220px;  /* This is the new padding for the top of section3 */
+            text-align: center;
+        }
+
+        .section4, .section6 {
+            background-color: #000;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-auto-rows: minmax(250px, auto);
+            grid-gap: 10px;
+        }
+
+        .section4 img, .section6 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section5 {
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+        }
+
+        .section5 h2 {
+            text-align: center;
+        }
+
+        .section5 p {
+            text-align: justify;
+        }
+        
+        .section6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.section6 .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.section6 img {
+    width: 50px;
+    height: 50px;
+}
+@keyframes scrolling {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+.section2 {
+    position: relative;
+    /* ...other styles... */
+}
+
+.section2 img {
+    position: absolute;
+    /* ...other styles... */
+}
+
+.scrolling-text {
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;  /* This makes the div span the entire width of its parent. */
+        left: 0;
+        right: 0;
+        z-index: 1;  /* This is less than the z-index of the image, so the text will be behind the image. */
+    }
+
+    .scrolling-text p {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scrolling 14s linear infinite;
+    }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="section1"></div>
+    
+    <div class="section2">
+    <img src="logo.png" alt="Logo">
+        <div class="scrolling-text">
+             <p>ouvert du lundi au vendredi de 7h à 17h</p>
+        </div>
+    </div>
+
+    
+    <div class="section3">
+
+        <h1>coin brasserie 🏠🍳</h1>
+        <p>salade du Chef 8,9€</p>
+        <p>plat du jour 9,9€</p>
+        <p>poisson frais 12€</p>
+        <p>viande grillée 12€</p>
+        <p>burger du Chef 9€</p>
+        <p>suggestion du Chef 13€</p>
+
+        <h1>desserts</h1>
+        <p>café gourmand 5,5€</p>
+        <p>du Chef 4,5€</p>
+
+        <h1>boissons</h1>
+        <p>eau plate 1,2€</p>
+        <p>eau gazeuse 1,5€</p>
+        <p>canette 2€</p>
+        <p>smoothie 🏠🍳 3€</p>
+        <p>jus de fruits 3€</p>
+        <p>bière bouteille 5€</p>
+        <p>bière de pression 25cl 2,4€</p>
+        <p>bière de pression 50cl 4,5€</p>
+        <p>vin verre 12cl - rouge 2,5€</p>
+        <p>vin verre 12cl - rosé  2,8€</p>
+
+        <h1>snack salé 🏠🍳</h1>
+        <p>quiche 3€</p>
+        <p>soupe du jour 4,2€</p>
+        <p>pain bagnat 4,8€</p>
+
+        <h1>boissons chaudes</h1>
+        <p>café 1,2€</p>
+        <p>thé 2€</p>
+        <p>cappuccino 2€</p>
+        <p>chocolat 2€</p>
+        <p>latte macchiato 2€</p>
+        <p>noisette 1,3€</p>
+
+    </div>
+    
+     <div class="section4">
+        <img src="food1.png" alt="Food 1">
+        <img src="food2.png" alt="Food 2">
+        <img src="food3.png" alt="Food 3">
+        <img src="food4.png" alt="Food 4">
+        <img src="food5.png" alt="Food 5">
+        <img src="food6.png" alt="Food 6">
+        <img src="food7.png" alt="Food 7">
+    </div>
+
+    <div class="section5">
+        <h2>à propos de moi (cv)</h2>
+        <p>Je suis Nicolas Vershynin, 17 ans (18 le 17/06). En plus du français, je parle couramment l'Anglais (diplôme C1), Allemand (bac), Russe et Chinois. Je cherche un métier avec un aspect social près de chez moi, ayant une période d'horaires complètement libres jusqu'à au moins août 2024(je compte faire une année de pause universitaire en restant à Gières - et je cherche à avoir de l'expérience dans l'éventualité de travailler dans un bar lors de mes études à Berlin dans quelques années) </p>
+        <h4> facultés d'employé polyvalent en restauration</h4>
+       	<p>expérience de service: au cours du mois d'août 2019 j'ai aidé mon frère à Moscou à servir des tables (Улица Пятницкая, 5) (contact: +79637821855). Cependant mes facultés pour porter un plateau à une main ne sont pas parfaites, mais je peux rapidement apprendre en m'entraînant chez moi si l'on me donne le plateau en question </p>
+        <p>facultés d'acceuil de clients: la fluidité de l'expression et des mouvements est une faculté que je cherche à perfectionner tous les jours en m'entraînant devant un mirroir. L'environnement d'un restaurant serait parfait pour entraîner la fluidité du ton, le regard/posture face aux interlocuteurs et surtout le tempo de l'interaction. </p>
+        <p>facultés manuelles: je suis certain de pouvoir éxecuter les autres tâches requises sans issues. <a href="https://photos.app.goo.gl/LcTxaxE9RDWtkDv87" target="_blank">example de projet que j'ai organisé et fait en terminale</a> </p>
+	
+        
+        <h2>contact</h2>
+        <p> numéro de téléphone: +33 06 25 48 78 66
+        <p> email: nicolas.vershynin@stjoavignon.com
+    
+        <h2>à propos du site</h2>
+        <p>Il a été fait pour améilorer mes facultés web, vous pouvez obtenir le code source par e-mail si vous le shouaitez</p>
+    	<p>Modifications éventuelles possibles: affiche du plat du jour en prenant une photo de la page facebook (scripte), mise à jour de la carte (les plats ont été tirés d'une ancienne carte),changer le logo (tiré d'une photo), enlever cette section blanche qui sert de CV </p>
+    	<p>Si jamais le site vous plaît, il est possible de le transférrer à un autre domaine tel latabverte2.fr</p>
+    </div>
+
+    <div class="section6">
+        <p class="social-text">rejoignez nous sur les platformes!</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/latabverte2/"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/Latableverte2/"><img src="facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
